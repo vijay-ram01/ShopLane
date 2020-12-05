@@ -1,0 +1,144 @@
+#checkout-wrapper {
+    position: relative;
+}
+#checkout-wrapper h1{
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 48px;
+}
+.checkout-heading {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 16px;
+}
+#checkout-card-wrapper {
+    width: 50%;
+}
+.checkout-card {
+    display: flex;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 5px;
+    background-color: white;
+    max-width: 600px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+.image-container {
+    width: 20%;
+    border-radius: 8px;
+    margin-right: 2rem;
+}
+.image-container img {
+    width: 80%;
+    min-width: 80px;
+    border-radius: 8px;
+}
+
+/* #checkout-wrapper div {
+    position: relative;
+} */
+
+#total-amt-wrapper {
+    width: 50%;
+    position: absolute;
+    left: 40rem;
+    top: 5.5rem;
+    margin-top: 48px;
+    margin-left: 3%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 5px;
+    padding: 16px;
+    background-color: #ffffff;
+}
+#total-amt {
+    font-size: 1.75rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+#place-order-btn {
+    background-color: #009688;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    padding: 18px 36px;
+    border-radius: 6px;
+    margin-top: 36px;
+    font-weight: 600;
+    color: white;
+}
+
+.textColorChange {
+    color: #ffffff;
+}
+.removeShadow {
+    box-shadow: none;
+}
+
+
+/* ====== In empty Cart ======= */
+.emptyCart {
+    color: #009688;
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* ============================= Mobile Responsive Area ================================ */
+@media only screen and (max-width: 600px) {
+    main{
+        padding: 1rem;
+    }
+
+    #checkout-wrapper h1 {
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .checkout-heading {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    #checkout-card-wrapper {
+        width: 100%;
+    }
+    .card-details {
+        margin: auto 0;
+    }
+    .card-details h4, p {
+        margin: 5px 0;
+    }
+
+    #total-amt-wrapper {
+        width: 100%;
+        position: static;
+        margin: 2rem 0;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    #total-amt {
+        font-size: 22px;
+    }
+
+    #place-order-btn {
+        margin-top: 1rem;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    #cart-count {
+        top: -22px;
+    }
+
+    .emptyCart {
+        font-size: 24px;
+    }
+}
